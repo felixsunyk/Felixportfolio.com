@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <script src="https://kit.fontawesome.com/7615526440.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" aria-hidden="true" onclick="closemenu"></i>
+            </ul>
+            <i class="fa fa-bars" aria-hidden="true" onclick="openmenu"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Felix K </span> from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ..................ABOUT........... -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> <img src="image/felix1.jpg" alt=""></div>
+                <div class="about-col-2"><h2 class="sub-title">About me</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam doloribus esse corrupti neque ex? Officia quasi impedit corrupti pariatur iusto libero. Consequuntur, veniam esse impedit distinctio iusto error corporis. Illo!</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designing Web-App interfaces</li>
+                            <li><span>Web Development</span> <br> Web-App Developmet</li>
+                            <li><span>App Development</span> <br>Buiding Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span> <br>UI/UX Training at EPC academy </li>
+                            <li><span>2023</span> <br> mentoring at EPC academy</li>
+                            <li><span>2024</span> <br>full stach developer at EPC Aademy</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Currently</span> <br>
+                            mentiring at Rescaf academy</li>
+                            <li><span>2021</span> <br> Web-App Developmet</li>
+                            <li><span>2018-2019</span> <br>UI/UX Design Training at LHI Institution</li>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...........services............. -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sun-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quis vero tenetur, reprehenderit temporibus, tempora quo, consequuntur alias quasi beatae porro cum suscipit placeat earum ab quibusdam molestias minus vel.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop" aria-hidden="true"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quis vero tenetur, reprehenderit temporibus, tempora quo, consequuntur alias quasi beatae porro cum suscipit placeat earum ab quibusdam molestias minus vel.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-crosshairs"aria-hidden="true"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quis vero tenetur, reprehenderit temporibus, tempora quo, consequuntur alias quasi beatae porro cum suscipit placeat earum ab quibusdam molestias minus vel.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- ............protfolio......... -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                   <img src="image/online-image.png" alt="">
+                   <div class="layer">
+                        <h3>social media app</h3>
+                        <p> the app connects you to the talented people around the world. download it from play store.</p>
+                        <a href="#"><i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+                   </div>
+                </div>
+                <div class="work">
+                   <img src="image/web-developer-portfolio.webp" alt="">
+                   <div class="layer">
+                    <h3>Music app</h3>
+                    <p> the app connects you to the talented people around the world. download it from play store.</p>
+                    <a href="#"><i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+               </div>
+                </div>
+                <div class="work">
+                   <img src="image/online-image.png" alt="">
+                   <div class="layer">
+                    <h3>Online Shopping app</h3>
+                    <p> the app connects you to the talented people around the world. download it from play store.</p>
+                    <a href="#"><i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+               </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn"> see more </a>
+        </div>
+    </div>
+    <!-- ..............contact......... -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left"><h1 class="sub-title">Contact Me </h1>
+                <p><i class="fa fa-paper-plane" aria-hidden="true"></i> felixkpormon@gmail.com</p>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i> +234 814-700-8005</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </div>
+                <a href="../../../../Documents/WAEC.pdf Download" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="Email" name="email"
+                        placeholder="your email"
+                        required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2" value="submit"> submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Felix K. made with <i class="fa fa-heart" aria-hidden="true"></i> by EPC academy</p>
+        </div>
+    </div>
+
+
+    <script>
+        const tablinks = document.getElementsByClassName("tab-links");
+        const sidemenu = document.getElementById("sidemenu");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+function openmenu(){
+    sidemenu.style.right= "0";
+}
+function closemenu(){
+    sidemenu.style.right= "-200";
+}
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+        
+
+    </script>
+</body>
+</html>
