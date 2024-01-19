@@ -11,7 +11,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="" class="logo" alt="">
+                <img src="" class="logo" alt=""> <h4><span>F</span>elix</h4>
                 <ul id="sidemenu">
                     <li><a href="#header">home</a></li>
                     <li><a href="#about">About</a></li>
@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="about-col-1"> <img src="image/felix1.jpg" alt=""></div>
                 <div class="about-col-2"><h2 class="sub-title">About me</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam doloribus esse corrupti neque ex? Officia quasi impedit corrupti pariatur iusto libero. Consequuntur, veniam esse impedit distinctio iusto error corporis. Illo!</p>
+                    <p>Eager frontend developer driven to craft exceptional digital solutions. Committed to fostering growth and success for others. Open to learning from fellow collaborators as we embark on this journey together. Let's create, innovate, and evolve as a team!</p>
 
                     <div class="tab-title">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -58,7 +58,7 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>Currently</span> <br>
-                            mentiring at Rescaf academy</li>
+                            mentoring at Rescaf academy</li>
                             <li><span>2021</span> <br> Web-App Developmet</li>
                             <li><span>2018-2019</span> <br>UI/UX Design Training at LHI Institution</li>
                         </ul>
@@ -75,19 +75,19 @@
                 <div>
                     <i class="fa fa-code" aria-hidden="true"></i>
                     <h2>web Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quis vero tenetur, reprehenderit temporibus, tempora quo, consequuntur alias quasi beatae porro cum suscipit placeat earum ab quibusdam molestias minus vel.</p>
+                    <p>Hello there! I design websites to look good and work well. I focus on making your online experience enjoyable and easy. Come check out my work and see how I bring creativity and practicality together in the digital world!</p>
                     <a href="#">learn more</a>
                 </div>
                 <div>
                     <i class="fa fa-crop" aria-hidden="true"></i>
                         <h2>UI/UX Design</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quis vero tenetur, reprehenderit temporibus, tempora quo, consequuntur alias quasi beatae porro cum suscipit placeat earum ab quibusdam molestias minus vel.</p>
+                        <p>Hi! I love making websites and apps easy to use and nice to look at. My focus is on creating designs that people enjoy using. Take a look at my portfolio to see how I make technology user-friendly and fun!</p>
                         <a href="#">learn more</a>
                     </div>
                     <div>
                         <i class="fa fa-crosshairs"aria-hidden="true"></i>
                         <h2>App Design</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quis vero tenetur, reprehenderit temporibus, tempora quo, consequuntur alias quasi beatae porro cum suscipit placeat earum ab quibusdam molestias minus vel.</p>
+                        <p>Hey! I design apps to be easy and look good. Making them simple to use is my goal. Check out my work in the portfolio, and see how I mix function with a bit of style in every app.</p>
                         <a href="#">learn more</a>
                     </div>
                 
@@ -153,6 +153,8 @@
                         <textarea name="Message" rows="6" placeholder="your message"></textarea>
                         <button type="submit" class="btn btn2" value="submit"> submit</button>
                     </form>
+                    <span id="msg"> 
+                    </span>
                 </div>
             </div>
         </div>
@@ -160,7 +162,6 @@
             <p>Copyright &copy Felix K. made with <i class="fa fa-heart" aria-hidden="true"></i> by EPC academy</p>
         </div>
     </div>
-
 
     <script>
         const tablinks = document.getElementsByClassName("tab-links");
@@ -182,8 +183,6 @@ function closemenu(){
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab")
         }
-        
-
     </script>
 </body>
 </html>
