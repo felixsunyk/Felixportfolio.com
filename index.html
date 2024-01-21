@@ -19,9 +19,9 @@
                     <li><a href="#portfolio">portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <!-- <i class="fa fa-times" aria-hidden="true" onclick="closemenu"></i> -->
-                    <i class="fa-sharp fa-solid fa-circle-xmark" id="closemenu"></i>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="close()"></i>
                 </ul>
-                <i class="fa-solid  fa-bars" id="openmenu"></i>
+                <i class="fa-solid  fa-bars" onclick="open()"></i>
                     <!-- <i class="fa fa-bars" aria-hidden="true" onclick="openmenu"></i> -->
             </nav>
             <div class="header-text">
@@ -168,8 +168,6 @@
     <script>
         const tablinks = document.getElementsByClassName("tab-links");
         const tabcontents = document.getElementsByClassName("tab-contents");
-        const open = document.getElementById("openmenu");
-        const close = document.getElementById("closemenu");
 
 
         function opentab(tabname){
@@ -182,17 +180,18 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-        
-            openmenu =() => {
-                open.style.right = "0";
-            }
-            closemenu = () =>{
-                close.style.right = "-200px"
-            }
-            
-            open.addEventListener("click", openmenu());
-            close.addEventListener("click", closemenu());
         </script>
-       
+
+       <script>
+        const side =
+       document.getElementsById("sidemenu");
+           function open(){
+            side.style.right = "0";
+           
+            }
+           function close(){
+            side.style.right = "-200px";
+            }
+       </script>
 </body>
 </html>

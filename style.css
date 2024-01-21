@@ -331,7 +331,7 @@ nav .fa-solid{
     }
     .header-text{
         margin-top:50%;
-        font-size: 16px;
+        font-size: 25px;
     }
     .header-text h1{
         font-size: 30px;
@@ -339,7 +339,7 @@ nav .fa-solid{
     }
     nav .fa-solid{
         display: block;
-        font-size: 25px;
+        font-size: 20px;
     }
     nav ul{
         background: #ff004f;
@@ -362,8 +362,9 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
-    .sub-title{
-        font-size: 10px;
+     .sub-title{
+        font-size: 30px;
+        margin-bottom: 15px;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
@@ -372,7 +373,8 @@ nav .fa-solid{
         margin-bottom: 30px;
     }
     .about-col-2{
-        font-size: 14px;
+        font-size: 15px;
+       
     }
     .tab-links{
         font-size: 16px;
@@ -380,6 +382,8 @@ nav .fa-solid{
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
+        justify-content: center;
+        text-align: center;
     }
     .copyright{
         font-size: 14px;
