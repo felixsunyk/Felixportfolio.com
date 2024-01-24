@@ -74,19 +74,19 @@
         <div class="container">
             <h1 class="sun-title">My Services</h1>
             <div class="services-list">
-                <div>
+                <div class="div">
                     <i class="fa fa-code" aria-hidden="true"></i>
                     <h2>web Design</h2>
                     <p>Hello there! I design websites to look good and work well. I focus on making your online experience enjoyable and easy. Come check out my work and see how I bring creativity and practicality together in the digital world!</p>
                     <a href="#">learn more</a>
                 </div>
-                <div>
+                <div class="div">
                     <i class="fa fa-crop" aria-hidden="true"></i>
                         <h2>UI/UX Design</h2>
                         <p>Hi! I love making websites and apps easy to use and nice to look at. My focus is on creating designs that people enjoy using. Take a look at my portfolio to see how I make technology user-friendly and fun!</p>
                         <a href="#">learn more</a>
                     </div>
-                    <div>
+                    <div class="div">
                         <i class="fa fa-crosshairs"aria-hidden="true"></i>
                         <h2>App Design</h2>
                         <p>Hey! I design apps to be easy and look good. Making them simple to use is my goal. Check out my work in the portfolio, and see how I mix function with a bit of style in every app.</p>
@@ -144,7 +144,7 @@
                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                 </div>
-                <a href="../../../../Documents/WAEC.pdf Download" class="btn btn2">Download CV</a>
+                <a href="../../../../WAEC  - Shortcut.lnk" class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form action="">
@@ -169,6 +169,13 @@
         const tablinks = document.getElementsByClassName("tab-links");
         const tabcontents = document.getElementsByClassName("tab-contents");
 
+        const side = document.getElementsById("sidemenu");
+        function open(){
+            side.style.right = "0";
+            }
+        function close(){
+            side.style.right = "-200px";
+            }
 
         function opentab(tabname){
             for(tablink of tablinks){
@@ -182,16 +189,8 @@
         }
         </script>
 
-       <script>
-        const side =
-       document.getElementsById("sidemenu");
-           function open(){
-            side.style.right = "0";
-           
-            }
-           function close(){
-            side.style.right = "-200px";
-            }
-       </script>
+       <!-- <script>
+       
+       </script> -->
 </body>
 </html>

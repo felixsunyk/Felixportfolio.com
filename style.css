@@ -388,6 +388,9 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+    .div p{
+        font-size: 15px;
+    }
 }
 #msg{
     color: #61b752;
