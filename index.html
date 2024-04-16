@@ -1,196 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>personal portfolio website</title>
-    <script src="https://kit.fontawesome.com/7615526440.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script
+      src="https://kit.fontawesome.com/7615526440.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="" class="logo" alt=""> <h4><span>F</span>elix</h4>
-                <ul id="sidemenu">
-                    <li><a href="#header">home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!-- <i class="fa fa-times" aria-hidden="true" onclick="closemenu"></i> -->
-                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="close()"></i>
-                </ul>
-                <i class="fa-solid  fa-bars" onclick="open()"></i>
-                    <!-- <i class="fa fa-bars" aria-hidden="true" onclick="openmenu"></i> -->
-            </nav>
-            <div class="header-text">
-                <p>front-end Developer</p>
-                <h1>Hi, I'm <span>Felix K </span> from Nigeria</h1>
-            </div>
-        </div>
+      <!-- <div class="container-fluid"> -->
+      <nav>
+        <!-- <div class="container-fluid"> -->
+        <a href="#"><img src="image/logo_trial.png" class="logo" alt="" /></a>
+        <!-- <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><hr class="dropdown-divider"></li> -->
+          <!-- <i class="fa fa-times" aria-hidden="true" onclick="closemenu"></i> -->
+          <!-- <i class="fa-sharp fa-solid fa-circle-xmark" onclick="close()"></i> -->
+        </ul>
+        <!-- </div> -->
+        <!-- <i class="fa-solid  fa-bars" onclick="open()"></i> -->
+
+        <!-- </div> -->
+      </nav>
+      <div class="header-text">
+        <p>front-end Developer</p>
+        <h1>Hi, I'm <span>Felix K </span> from Nigeria</h1>
+      </div>
+      <!-- </div> -->
     </div>
     <!-- ..................ABOUT........... -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1"> <img src="image/felix1.jpg" alt=""></div>
-                <div class="about-col-2"><h2 class="sub-title">About me</h2>
-                    <p>Eager frontend developer driven to craft exceptional digital solutions. Committed to fostering growth and success for others. Open to learning from fellow collaborators as we embark on this journey together. Let's create, innovate, and evolve as a team!</p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1"><img src="image/felix1.jpg" alt="" /></div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About me</h2>
+            <p>
+              Eager frontend developer driven to craft exceptional digital
+              solutions. Committed to fostering growth and success for others.
+              Open to learning from fellow collaborators as we embark on this
+              journey together. Let's create, innovate, and evolve as a team!
+            </p>
 
-                    <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span> <br>Designing Web-App interfaces</li>
-                            <li><span>Web Development</span> <br> Web-App Developmet</li>
-                            <li><span>App Development</span> <br>Buiding Android/ios apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2022</span> <br>UI/UX Training at EPC academy </li>
-                            <li><span>2023</span> <br> mentoring at EPC academy</li>
-                            <li><span>2024</span> <br>full stach developer at EPC Aademy</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Currently</span> <br>
-                            mentoring at Rescaf academy</li>
-                            <li><span>2021</span> <br> Web-App Developmet</li>
-                            <li><span>2018-2019</span> <br>UI/UX Design Training at LHI Institution</li>
-                        </ul>
-                    </div>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span> <br />Designing Web-App interfaces</li>
+                <li>
+                  <span>Web Development</span> <br />
+                  Web-App Developmet
+                </li>
+                <li>
+                  <span>App Development</span> <br />Buiding Android/ios apps
+                </li>
+              </ul>
             </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022</span> <br />UI/UX Training at EPC academy</li>
+                <li>
+                  <span>2023</span> <br />
+                  mentoring at EPC academy
+                </li>
+                <li>
+                  <span>2024</span> <br />full stach developer at EPC Aademy
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Currently</span> <br />
+                  mentoring at Rescaf academy
+                </li>
+                <li>
+                  <span>2021</span> <br />
+                  Web-App Developmet
+                </li>
+                <li>
+                  <span>2018-2019</span> <br />UI/UX Design Training at LHI
+                  Institution
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- ...........services............. -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sun-title">My Services</h1>
-            <div class="services-list">
-                <div class="div">
-                    <i class="fa fa-code" aria-hidden="true"></i>
-                    <h2>web Design</h2>
-                    <p>Hello there! I design websites to look good and work well. I focus on making your online experience enjoyable and easy. Come check out my work and see how I bring creativity and practicality together in the digital world!</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div class="div">
-                    <i class="fa fa-crop" aria-hidden="true"></i>
-                        <h2>UI/UX Design</h2>
-                        <p>Hi! I love making websites and apps easy to use and nice to look at. My focus is on creating designs that people enjoy using. Take a look at my portfolio to see how I make technology user-friendly and fun!</p>
-                        <a href="#">learn more</a>
-                    </div>
-                    <div class="div">
-                        <i class="fa fa-crosshairs"aria-hidden="true"></i>
-                        <h2>App Design</h2>
-                        <p>Hey! I design apps to be easy and look good. Making them simple to use is my goal. Check out my work in the portfolio, and see how I mix function with a bit of style in every app.</p>
-                        <a href="#">learn more</a>
-                    </div>
-                
 
-            </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sun-title">My Services</h1>
+        <div class="services-list">
+          <div class="div">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <h2>web Design</h2>
+            <p>
+              Hello there! I design websites to look good and work well. I focus
+              on making your online experience enjoyable and easy. Come check
+              out my work and see how I bring creativity and practicality
+              together in the digital world!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div class="div">
+            <i class="fa fa-crop" aria-hidden="true"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Hi! I love making websites and apps easy to use and nice to look
+              at. My focus is on creating designs that people enjoy using. Take
+              a look at my portfolio to see how I make technology
+              user-friendly and fun!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div class="div">
+            <i class="fa fa-crosshairs" aria-hidden="true"></i>
+            <h2>App Design</h2>
+            <p>
+              Hey! I design apps to be easy and look good. Making them simple to
+              use is my goal. Check out my work in the portfolio, and see how I
+              mix function with a bit of style in every app.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div class="div">
+            <i class="fa fa-crosshairs" aria-hidden="true"></i>
+            <h2>Desktop Design</h2>
+            <p>
+              Hey! I design apps to be easy and look good. Making them simple to
+              use is my goal. Check out my work in the portfolio, and see how I
+              mix function with a bit of style in every app.
+            </p>
+            <a href="#">learn more</a>
+          </div>
         </div>
+      </div>
     </div>
     <!-- ............protfolio......... -->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                   <img src="image/online-image.png" alt="">
-                   <div class="layer">
-                        <h3>social media app</h3>
-                        <p> the app connects you to the talented people around the world. download it from play store.</p>
-                        <a href="#"><i class="fa fa-external-link-square" aria-hidden="true"></i></a>
-                   </div>
-                </div>
-                <div class="work">
-                   <img src="image/web-developer-portfolio.webp" alt="">
-                   <div class="layer">
-                    <h3>Music app</h3>
-                    <p> the app connects you to the talented people around the world. download it from play store.</p>
-                    <a href="#"><i class="fa fa-external-link-square" aria-hidden="true"></i></a>
-               </div>
-                </div>
-                <div class="work">
-                   <img src="image/online-image.png" alt="">
-                   <div class="layer">
-                    <h3>Online Shopping app</h3>
-                    <p> the app connects you to the talented people around the world. download it from play store.</p>
-                    <a href="#"><i class="fa fa-external-link-square" aria-hidden="true"></i></a>
-               </div>
-                </div>
-                
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="image/online-image.png" alt="" />
+            <div class="layer">
+              <h3>social media app</h3>
+              <p>
+                the app connects you to the talented people around the world.
+                download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa fa-external-link-square" aria-hidden="true"></i
+              ></a>
             </div>
-            <a href="#" class="btn"> see more </a>
+          </div>
+          <div class="work">
+            <img src="image/web-developer-portfolio.webp" alt="" />
+            <div class="layer">
+              <h3>Music app</h3>
+              <p>
+                the app connects you to the talented people around the world.
+                download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa fa-external-link-square" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/online-image.png" alt="" />
+            <div class="layer">
+              <h3>Online Shopping app</h3>
+              <p>
+                the app connects you to the talented people around the world.
+                download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa fa-external-link-square" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a href="#" class="btn"> see more </a>
+      </div>
     </div>
     <!-- ..............contact......... -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left"><h1 class="sub-title">Contact Me </h1>
-                <p><i class="fa fa-paper-plane" aria-hidden="true"></i> felixkpormon@gmail.com</p>
-                <p><i class="fa fa-phone-square" aria-hidden="true"></i> +234 814-700-8005</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                </div>
-                <a href="../../../../WAEC  - Shortcut.lnk" class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form action="">
-                        <input type="text" name="Name" placeholder="your name" required>
-                        <input type="Email" name="email"
-                        placeholder="your email"
-                        required>
-                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
-                        <button type="submit" class="btn btn2" value="submit"> submit</button>
-                    </form>
-                    <span id="msg"> 
-                    </span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              felixkpormon@gmail.com
+            </p>
+            <p>
+              <i class="fa fa-phone-square" aria-hidden="true"></i> +234
+              814-700-8005
+            </p>
+            <div class="social-icons">
+              <a href="#"
+                ><i class="fa fa-facebook-official" aria-hidden="true"></i
+              ></a>
+              <a href="#"
+                ><i class="fa fa-twitter-square" aria-hidden="true"></i
+              ></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="#"
+                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+              ></a>
             </div>
+            <a href="image/Resume.pdf" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="your name" required />
+              <input
+                type="Email"
+                name="email"
+                placeholder="your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="your message"
+              ></textarea>
+              <button type="submit" class="btn btn2" value="submit">
+                submit
+              </button>
+            </form>
+            <span id="msg"> </span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright &copy Felix K. made with <i class="fa fa-heart" aria-hidden="true"></i> by EPC academy</p>
-        </div>
-    </div> 
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy Felix K. made with
+          <i class="fa fa-heart" aria-hidden="true"></i> by EPC academy
+        </p>
+      </div>
+    </div>
 
     <script>
-        const tablinks = document.getElementsByClassName("tab-links");
-        const tabcontents = document.getElementsByClassName("tab-contents");
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
 
-        const side = document.getElementsById("sidemenu");
-        function open(){
-            side.style.right = "0";
-            }
-        function close(){
-            side.style.right = "-200px";
-            }
+      const side = document.getElementsById("sidemenu");
+      function open() {
+        side.style.right = "0";
+      }
+      function close() {
+        side.style.right = "-200px";
+      }
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        </script>
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
 
-       <!-- <script>
+    <!-- <script>
        
        </script> -->
-</body>
+  </body>
 </html>
