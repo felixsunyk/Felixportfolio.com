@@ -88,7 +88,7 @@ nav ul li a:hover::after {
 }
 /* ........about...... */
 #about {
-  padding: 80px 0;
+  /* padding: 80px 0; */
   color: #ababab;
 }
 .row {
@@ -154,6 +154,31 @@ nav ul li a:hover::after {
 }
 
 
+#skills {
+  /* padding: 80px 0; */
+  color: #ababab;
+}
+ /* technical skill section */
+.technical-skills{
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+ 
+}
+.technical-skills h3, h2{
+  margin: 1em 0;
+}
+.technical-skills h2{
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.technical-skills ul{
+ 
+  margin-left: 3em;
+  display: inline;
+  line-height: 1.5em;
+ 
+}
 
  /* .................soft-skills.......... */
 
@@ -320,21 +345,21 @@ nav ul li a:hover::after {
 .social-icons a {
   text-decoration: none;
   font-size: 30px;
-  margin-right: 15px;
+  /* margin-right: 50px; */
   color: #ababab;
   margin: 0.5em;
   /* flex-direction: column-reverse; */ display: grid;
     grid-template-columns: 1fr;
   transition: transform 0.5s;
-  margin-left: 40px;
+  margin-left: 15px;
  
   }
   
   .social{
     float: right;
-    /* background-color: rebeccapurple; */
     position:fixed;
     top: 40;
+    z-index: 1;
 }
 .social-icons a:hover {
   color: #ff004f;
