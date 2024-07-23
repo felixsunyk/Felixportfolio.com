@@ -472,6 +472,7 @@ nav .fa-solid {
     flex-basis: 100%;
     justify-content: center;
     text-align: center;
+ 
   }
   .copyright {
     font-size: 14px;
@@ -485,6 +486,4 @@ nav .fa-solid {
   margin-top: -40px;
   display: block;
 }
-/* .row{
-  display: block;
-} */
+
