@@ -200,7 +200,7 @@ nav ul li a:hover::after {
  }
  .soft-skills:hover{
   background: #ff004f;
-  transform: skewY(10deg);
+  transform: skewY(5deg);
  }
  .skills{
   margin-bottom: 1em;
@@ -485,3 +485,6 @@ nav .fa-solid {
   margin-top: -40px;
   display: block;
 }
+/* .row{
+  display: block;
+} */
