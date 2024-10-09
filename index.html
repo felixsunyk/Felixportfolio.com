@@ -297,7 +297,7 @@
             <a href="image/My-Resume.pdf" class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
-            <form action="https://formspree.io/f/xwpkezvr" method="post">
+            <form id="contact-form" action="https://formspree.io/f/xwpkezvr" method="post" onsubmit="clearForm()">
               <input type="text" name="FirstName" placeholder="your first name" required />
               <input type="text" name="lastName" placeholder="your last name" required />
               <input
@@ -352,10 +352,12 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
+
+      function clearForm() {
+       const form = document.getElementById('contact-form');
+      form.reset();
+  }
     </script>
 
-    <!-- <script>
-       
-       </script> -->
   </body>
 </html>
